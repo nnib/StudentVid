@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NCI Videos - Home</title>
+<!--Responsive With all Screens Css-->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<!-- JavaScript1 Start-->
+<script>
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+</script>
+<!-- Css Project Start-->
+<link rel="stylesheet" href="styles/project.css" type="text/css">
+
+</head>
+
+
+
+<!-- Body Start-->
+<body>
+
+<!-- Header Start-->
+<div class="wrapper row1">
+		  <header id="header" class="clear">
+			<div id="hgroup">
+			  <img src="images/homep/logoR2.png" width="320" height="150" alt="" />
+			</div>
+			<br />
+			<div id="date">
+			<h1>Welcome NCI Videos</h1>
+		
+			<!-- User name and Password-->
+<form action="action" method="post">
+<label for="username">Username:</label><input type="text" id="username" name="username"><br />
+<label for="password">Password:</label><input type="password" id="password" name="password"><br />
+<input type="submit" value="Login">
+</form>
+			
+				</div>
+			
+		  </header>
+		</div>
+<!--NEW DIV-->
+		<div id="buttons" class="clear">
+		  <header id="header1" class="clear">
+			<nav>
+			  <ul>
+				<li><a href="index.html">Home</a></li>	
+				<li><a href="computing.html">Computing</a></li>
+				<li><a href="business.html">Business</a></li>
+				<li><a href="marketing.html">Marketing</a></li>
+				<li><a href="upload.html">Student Upload</a></li>
+				<li class="last"><a href="contact.html">Contact Us</a></li>			
+			  </ul>
+			</nav>
+		  </header>
+		</div>
+
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <div id="slider">
+	
+	<a href="javascript:gotoshow()"><img src="blank" alt="" id="slide" width="960" height="450"></a>
+			<script>
+			slideshowimages("images/slide/p1(1).jpg","images/slide/p2(1).jpg","images/slide/p3(1).jpg","images/slide/p4(1).jpg","images/slide/p5(1).jpg")
+			slideshowlinks("#","#","#","#","#")
+			var slideshowspeed=2500
+			var whichlink=0
+			var whichimage=0
+			function slideit(){
+			if (!document.images)
+			return
+			document.images.slide.src=slideimages[whichimage].src
+			whichlink=whichimage
+			if (whichimage<slideimages.length-2)
+			whichimage++
+			else
+			whichimage=0
+			setTimeout("slideit()",slideshowspeed)
+			}
+			slideit()
+			</script>
+			<br/>
+	
+	
+	</div>
+    <!-- main content -->
+    <div id="homepage">
+	
+	 <!-- Introduction -->
+      <div id="intro" class="last clear">
+        <article>
+          <figure>
+		 
+		
+            <figcaption>
+              <h2>Welcome to the NCIRL video resource page!</h2>
+              <p>Our aim is to provide the students of the National College of Ireland with Educational and informative videos. We also offer a student upload page, so your views, opinions and experiences of life here in NCI can be shared.  - If you wish to upload a video, please go to our contact us page.</p>
+			 
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+
+	  
+	  
+	  <!-- First Block -->
+        <article class="one_third">
+          <figure><img src="images/homep/comimg2.jpg" width="290" height="180" alt="">
+            <figcaption>
+              <h2>Computing</h2>
+              <p> Videos on Html, Java & Mathamatics.</p>
+			  <footer class="more"><a href="computing.html"><span>Watch Videos &raquo;</span></a></footer>
+            </figcaption>
+          </figure>
+        </article>
+		
+		
+		<!-- 2nd Block -->
+        <article class="one_third">
+          <figure><img src="images/homep/busimg2.jpg" width="290" height="180" alt="">
+            <figcaption>
+              <h2>Business</h2>
+              <p>Meet some of the Business students</p>
+			  <footer class="more"><a href="business.html"><span>Watch Videos &raquo;</span></a></footer>
+            </figcaption>
+          </figure>
+        </article>
+	
+		
+		
+		<!--3rd Block -->
+        <article class="one_third ">
+          <figure><img src="images/homep/marimg2.jpg" width="290" height="180" alt="">
+            <figcaption>
+              <h2>Marketing</h2>
+              <p>Marketing related videos </p>
+			   <footer class="more"><a href="marketing.html"><span>Watch Videos &raquo;</span></a></footer>
+            </figcaption>
+          </figure>
+        </article>
+      
+	  
+	  <!--4th Block -->
+        <article class="one_third lastbox">
+          <figure><img src="images/homep/stuimg.jpg" width="290" height="180" alt="">
+            <figcaption>
+              <h2>Student page</h2>
+              <p>CONTACT US for information about uploading your own videos! </p>
+			  <footer class="more"><a href="upload.html"><span>Watch Videos &raquo;</span></a></footer>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+
+     
+      <!-- / Introduction -->
+    </div>
+    <!-- / content body -->
+  </div>
+
+<!-- Footer -->
+
+<!-- Social Network -->
+<div class="add" style="text-align:center;">
+<a href="https://www.facebook.com"><img src="images/social/facebook.png" alt="" /></a>
+<a href="https://accounts.google.com"><img src="images/social/googlep.png" alt="" /></a>
+<a href="https://twitter.com/"><img src="images/social/twitter.png" alt="" /></a>
+<a href="https://www.youtube.com/"><img src="images/social/youtube.png" alt="" /></a>
+</div>
+
+<!-- Copyright -->
+<div class="wrapper row3">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="index.html">NCI Video</a></p>
+    <p class="fl_right">Design by B,N,K</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+/* Body*/
+body{
+margin:0; 
+padding:0; 
+font-size:13px; 
+font-family:Georgia, "Times New Roman", Times, serif; 
+color:#919191; 
+background-color:#232323;
+}
+#slider{
+	border:1px solid #D6D6D6;
+	padding:5px;
+	margin:0 0 15px 0;
+	display:block; width:100%; line-height:1.8em;
+}
+
+#headertext{
+	float:right;
+}
+#date{
+	float:right;
+	text-align: right;
+}
+
+.clear:after{
+content:"."; 
+display:block; 
+height:0; 
+clear:both; 
+visibility:hidden; 
+line-height:0;
+}
+
+.clear{
+display:block; 
+clear:both;
+}
+
+
+
+a{
+outline:none; 
+text-decoration:none;
+}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{
+margin:0; 
+padding:0; 
+border:0; 
+line-height:normal; 
+vertical-align:middle;
+}
+
+
+/*Wrapper*/
+div.wrapper{
+display:block; 
+width:100%; 
+margin:0; 
+padding:0; 
+text-align:left;
+}
+
+
+
+/*row 1 top of the page*/
+.row1, .row1 a{
+color:#C0BAB6; 
+background-color:#333333;
+}
+
+/*row 2 Middle of the page*/
+.row2{
+color:#979797; 
+background-image: url("../images/upload/bghg.jpg"); width:100%; height:100%;
+}
+
+.row2 a{
+color:#FF9900;
+}
+
+/*row 3 end of the page*/
+.row3, .row3 a{
+color:#919191; 
+background-color:#232323;
+}
+
+/*Generalise*/
+#header, #container, #footer, #copyright{
+display:block; 
+width:960px; 
+margin:0 auto;
+}
+
+nav ul{
+margin:0; 
+padding:0; 
+list-style:none;
+}
+
+h1, h2, h3, h4{
+margin:0; 
+padding:0; 
+font-size:32px; 
+font-weight:normal; 
+font-style:italic; 
+line-height:normal;
+}
+
+.one_third{
+display:block; 
+float:left; 
+margin:0 30px 0 0;
+}
+
+.one_third{
+width:450px;
+}
+
+
+/*Header*/
+#header{padding:20px 0;}
+#header #hgroup{float:left; margin:0 0 20px 0;}
+#header nav{display:block; float:right; margin:10px 0 0 0; padding:20px 0; color:#C0BAB6; background-color:#232323;}
+#header nav ul{padding:0 20px;}
+#header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li a{color:#C0BAB6; background-color:#232323;}
+#header nav li a:hover{color:#EFD159; background-color:#232323;}
+
+/* Nav Buttons*/
+#header1{padding:10px 0;}
+#header1 nav{display:block; margin:10px 0 0 0; padding:5px 0; color:#C0BAB6; background-color:#232323;}
+#header1 nav ul{padding:0 30px;}
+#header1 nav li{display:inline; margin-right:50px; text-transform:uppercase;}
+#header1 nav li a{color:#C0BAB6; background-color:#232323;}
+#header1 nav li a:hover{color:#EFD159; background-color:#232323;}
+nav ul{text-align:center; margin:0; padding:20px; list-style:none;}
+
+
+/*Content Area*/
+#container{padding:30px 0;}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right; color:#EFD159;}
+
+/*Main Content*/
+#container #homepage{display:block; width:100%; line-height:1.8em;}
+#container #homepage #services article figure img{margin:0 0 15px 0; padding:4px; border:1px solid #D6D6D6;}
+#container #homepage #services article figure h2{font-size:18px; font-weight:bold;}
+#container #homepage #services article figure h2{font-size:18px; font-weight:bold;}
+#container #homepage #intro article figure img{float:right; margin:0 0 10px 0; padding:4px; border:1px solid #D6D6D6;}
+#container #homepage #intro article figure figcaption{float:left; width:100%;}
+
+/*Footer*/
+/*Copyright*/
+#copyright{padding:20px 0;}
+#copyright p{margin:0; padding: 0;}
+
+
+/*social network*/
+.add{margin: 15px;}
+.add a{display: inline-block; transition: all 0.5s;}
+.add a:hover {transform: rotate(360deg);}
+
+
+/*username & password form */
+input {
+font-family: "Helvetica Neue", Helvetica, sans-serif;
+font-size: 12px;
+outline: none;
+}
+
+input[type=text],input[type=password] , input[type=submit]{
+color: #777;
+padding-left: 10px;
+margin: 10px;
+margin-top: 12px;
+margin-left: 18px;
+width: 120px;
+}
+ input[type=submit]{
+ width: 60px;
+ }
+ 
+form {
+display:block; 
+margin:0; 
+padding:0;
+margin-top: 20px;
+padding:0 20px;
+}
+
+label {
+color: #C0BAB6;
+display: inline-block;
+margin-left: 18px;
+padding-top: 10px;
+font-size: 14px;
+}
+
+/*button*/
+span{
+cursor:pointer;
+padding:2px 5px; 
+background:#35b128; 
+border:0px solid #33842a;
+border-radius: 10px;
+box-shadow: 0 0 2px rgba(0,0,0, .75);
+color:#f3f3f3;
+font-size:1.1em;
+}
+
+span:hover,span:focus{
+background-color :#399630; 
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+/*Responsive Meta Tag ** this will give error in css but ignore because it's fine*/
+@viewport{ width: device-width; }

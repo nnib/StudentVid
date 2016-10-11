@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NCI Student Upload</title>
+<!-- JavaScript1 Start-->
+<script>
+$(function(){
+    $('#clickme').click(function(){
+        $('#uploadme').click();
+    });
+});
+</script>
+
+<!-- Css upload Start-->
+<link rel="stylesheet" href="styles/upload.css" type="text/css">
+
+<!--Responsive With all Screens Css-->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+</head>
+
+<!-- Body Start-->
+<body>
+
+<!-- Header Start-->
+<div class="wrapper row1">
+ 		  <header id="header" class="clear">
+			<div id="hgroup">
+			  <img src="images/homep/logoR2.png" width="320" height="150" alt="">
+			</div>
+			<br />
+			<div id="date">
+			<h2>Welcome to our STUDENT UPLOADS page</h2>
+			<!-- time and date Jquery-->
+					<p id="demo"></p>
+				<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d.toString();
+				</script>
+				</div>
+				</div>
+			
+		  </header>
+		</div>
+<!--NEW DIV-->
+		<div id="buttons" class="clear">
+		  <header id="header1" class="clear">
+			<nav>
+			  <ul>
+				<li><a href="index.html">Home</a></li>	
+				<li><a href="computing.html">Computing</a></li>
+				<li><a href="business.html">Business</a></li>
+				<li><a href="marketing.html">Marketing</a></li>
+				<li><a href="upload.html">Student Upload</a></li>
+				<li class="last"><a href="contact.html">Contact Us</a></li>					
+			  </ul>
+			</nav>
+		  </header>
+		</div>
+
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+
+    <!-- main content -->
+    <div id="homepage">
+      <!-- Services -->
+      <div id="services" class="clear">
+	  
+	  <br /><br />
+	  <!-- First Block -->
+        <article class="one_third">
+			<h2>Upload Your Video</h2>
+			<input type="file" id="uploadme" /><br />
+			<input type="button" id="clickme" value="Upload Video 1" /><br />
+			<input type="button" id="clickme1" value="Upload Video 2" /><br />
+			<input type="button" id="clickme2" value="Upload Video 3" /><br />
+			<input type="button" id="clickme3" value="Upload Video 4" /><br /><br />
+			<input type="checkbox" name="vehicle" value="Bike">I accept the Terms and Conditions<br />
+			<input type="submit" value="Start Upload">
+        </article>
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/fjLk5j32Klo" style="border:0;" allowfullscreen></iframe>
+		
+
+      <!-- / Introduction -->
+    </div>
+    <!-- / content body -->
+  </div>
+  </div>
+
+<br /><br /><br />
+<br /><br /><br />
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+
+<!-- Social Network -->
+<div style="text-align:center;" class="add">
+<a href="https://www.facebook.com"><img src="images/social/facebook.png" alt="" /></a>
+<a href=""><img src="images/social/googlep.png" alt="" /></a>
+<a href="https://twitter.com/"><img src="images/social/twitter.png" alt="" /></a>
+<a href="https://www.youtube.com/"><img src="images/social/youtube.png" alt="" /></a>
+</div>
+
+<!-- Copyright -->
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="index.html">NCI Video</a></p>
+    <p class="fl_right">Design by B,N,K</p>
+  </footer>
+</div>
+</body>
+</html>

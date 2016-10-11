@@ -1,0 +1,134 @@
+/*vid background div*/
+#purple{
+	color:black;
+	width:100%;
+	border-radius:20px;
+	background-color:#3E6C84;
+}
+
+#headertext{
+	float:right;
+}
+#date{
+	float:right;
+	text-align: right;
+}
+h1, h2, h3, h4{
+	margin:0;
+	padding:10px; 
+	font-size:30px; 
+	font-weight:normal; 
+	font-style:italic; 
+	line-height:normal;
+}
+
+/* Nav Buttons menu*/
+#header1{
+	padding:10px 0;
+}
+
+#header1 nav{
+	display:block; 
+	margin:10px 0 0 0; 
+	padding:5px 0; 
+	color:#C0BAB6; 
+	background-color:#232323;
+}
+#header1 nav ul{
+padding:0 30px;
+}
+
+#header1 nav li{
+	display:inline; 
+	margin-right:50px; 
+	text-transform:uppercase;
+}
+#header1 nav li a{
+	color:#C0BAB6; 
+	background-color:#232323;
+}
+#header1 nav li a:hover{
+	color:#EFD159; 
+	background-color:#232323;
+}
+	
+nav ul{
+	text-align:center; 
+	margin:0; 
+	padding:20px; 
+	list-style:none;
+}
+
+/* Body*/
+body{
+	margin:0; 
+	padding:0; 
+	font-size:15px; 
+	font-family:Georgia, "Times New Roman", Times, serif; 
+	background-color:#232323;	
+}
+
+.clear:after{
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden; 
+	line-height:0;
+}
+
+.fl_left{
+	float:left;
+}
+.fl_right{
+	float:right;
+}
+
+
+/*Wrapper*/
+div.wrapper{
+display:block; width:100%; margin:0; padding:0; text-align:left;}
+.row1, .row1 a{color:#C0BAB6; background-color:#333333;}
+.row2{color:black; height:100%; background-image: url("../images/upload/Wheels.png")}
+.row2 a{color:#FF9900;}
+.row3, .row3 a{color:#919191; background-color:#232323;}
+
+/*General*/
+#header, #container, #footer, #copyright{display:block; width:960px; margin:0 auto;}
+
+.one_third, .two_third, .three_third{display:block; float:left; margin:0 1px 0 0;}
+.one_third{width:300px;}
+.two_third{width:630px;}
+.three_third{width:960px; float:none; margin-right:0; clear:both;}
+
+
+/*Header*/
+#header{padding:20px 0;}
+#header #hgroup{float:left; margin:0 0 20px 0;}
+#header nav{display:block; margin:10px 0 0 0; padding:5px 0; color:#C0BAB6; background-color:#232323;}
+#header nav ul{padding:0 20px;}
+#header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li a{color:#C0BAB6; background-color:#232323;}
+#header nav li a:hover{color:#EFD159; background-color:#232323;}
+
+/*Content Area*/
+#container{padding:30px 0;}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right;}
+
+/*Footer*/
+/*Copyright*/
+#copyright{padding:20px 0;}
+#copyright p{margin:0; padding: 0;}
+
+
+/*Social*/
+.add{margin: 15px;}
+.add a{display: inline-block; transition: all 0.5s;}
+.add a:hover {transform: rotate(360deg);}
+
+
+/*Responsive Meta Tag ** this will give error in css but ignore because it's fine*/
+@viewport{ width: device-width; }
